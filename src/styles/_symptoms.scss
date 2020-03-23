@@ -1,0 +1,131 @@
+.symptoms {
+  padding-top: 120px;
+  color: #2e2c35;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 34%;
+    width: 1000px;
+    height: 870px;
+
+    background-image: url("../images/symptoms-bg.png");
+  }
+
+  &__title {
+    margin-bottom: 75px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    &-hightlight {
+      color: $text-color-orange;
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 45px 45px 0;
+    width: 75px;
+    height: 75px;
+
+    border: 2px solid $text-color-orange;
+    border-radius: 50%;
+  }
+  &__img {
+    position: absolute;
+    top: 22%;
+    left: 54%;
+    width: 487px;
+    height: 800px;
+
+    background-image: url("../images/symptoms-man.png");
+    background-repeat: no-repeat;
+    background-size: 78%;
+  }
+}
+
+.symptoms-box {
+  width: 460px;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #2e2c35;
+  }
+  &__text {
+    font-size: 16px;
+    color: #7e7c89;
+  }
+}
+
+.symptoms-warning {
+  display: flex;
+  margin-top: 80px;
+  &__picture {
+    margin-right: 45px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      width: 100%;
+      height: 3px;
+      background-color: #b9cfdd;
+    }
+  }
+  &__text {
+    width: 320px;
+    position: relative;
+
+    font-size: 18px;
+    font-weight: bold;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      width: 40%;
+      height: 3px;
+      
+      background-color: #e5f2fa;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .symptoms {
+    padding-top: 50px;
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .symptoms {
+    &__picture {
+      flex-shrink: 0;
+    }
+  }
+
+  .symptoms-box__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .symptoms {
+    &__title {
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+    &__picture {
+      display: none;
+    }
+  }
+}

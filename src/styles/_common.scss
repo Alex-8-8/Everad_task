@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $main-bg-color;
+  font-family: "Roboto", sans-serif;
+  color: $text-color-darkgray;
+  overflow-x: hidden;
+}
+
+.section-wrapper {
+  @include section-wrapper;
+}
+
+.section-inner {
+  padding: 0 30px;
+}
+
+.pantoflex {
+  color: $text-color-darkblue;
+}

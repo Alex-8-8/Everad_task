@@ -1,0 +1,37 @@
+.navigation {
+  margin-top: 28px;
+  position: relative;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    border-bottom: 2px dotted #42424d;
+    transition: color, border-bottom 0.3s ease;
+    &:hover {
+      color: $text-color-orange;
+      border-bottom: 2px dotted $text-color-orange;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navigation {
+    &__item:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .navigation {
+    &__item {
+      font-size: 14px;
+    }
+    &__item:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

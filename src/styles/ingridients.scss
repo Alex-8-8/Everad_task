@@ -1,0 +1,74 @@
+.ingridients {
+  padding: 175px 30px 25px;
+  &__wrapper {
+    display: flex;
+  }
+  &__description {
+    max-width: 580px;
+  }
+  &__title {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+  &__composition {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 580px;
+  }
+}
+
+.composition-card {
+  cursor: pointer;
+  max-width: 290px;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+
+  transition: box-shadow, transform 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 4px 3px #e5f2fa;
+    transform: scale(1.01);
+  }
+  &__title {
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      
+      background-color: #e5f2fa;
+    }
+  }
+  &__img {
+    margin-bottom: 10px;
+  }
+  &__description {
+    color: #7e7c89;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 1130px) {
+  .ingridients {
+    padding: 50px 30px 25px;
+    text-align: center;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      display: none;
+    }
+  }
+  .composition-card {
+    max-width: 240px;
+    padding: 0 10px;
+  }
+}

@@ -4,3 +4,55 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin section-wrapper {
+  margin: 0 auto;
+  max-width: 1175px;
+}
+
+@mixin order-button {
+  cursor: pointer;
+  height: 70px;
+  width: 220px;
+
+  background-image: $button-color;
+  border: none;
+  border-bottom: 5px solid $color-blue;
+  border-radius: 5px;
+
+  color: #fff;
+  font-size: 16px;
+  transition: background-image 0.3s ease;
+  &-order {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &:hover {
+    background-image: linear-gradient($color-lightblue, $color-blue);
+  }
+}
+
+@mixin cream-background($shift-left, $shift-bottom) {
+  position: absolute;
+  left: $shift-left;
+  bottom: $shift-bottom;
+  &__wrapper {
+    position: relative;
+  }
+  &__cream-box {
+    position: absolute;
+    width: 335px;
+    height: 300px;
+    bottom: -50px;
+    background-image: url("../images/cream-box.png");
+  }
+  &__cream-container {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    bottom: -115px;
+    left: 170px;
+
+    background-image: url("../images/cream-container.png");
+  }
+}

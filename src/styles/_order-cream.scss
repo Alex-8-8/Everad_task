@@ -1,0 +1,35 @@
+.order-cream {
+  margin-top: 220px;
+  padding: 30px;
+  position: relative;
+
+  background: url("../images/order-cream-bg.jpg") no-repeat center;
+  background-size: cover;
+  &__wrapper {
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-size: 48px;
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+}
+
+.order-cream .cream-background {
+  @include cream-background(490px, 60px);
+}
+
+@media (max-width: 1130px) {
+  .order-cream {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .order-cream {
+    margin-top: 70px;
+  }
+}
