@@ -175,7 +175,8 @@ body {
     .header-cost__amount-new {
       color: #3abde4;
       font-weight: bold;
-      font-size: 30px; }
+      font-size: 34px;
+      height: 34px; }
   .header-cost__rub {
     font-size: 13px; }
 
@@ -255,13 +256,12 @@ body {
 
 @media (max-width: 1130px) {
   .header {
-    background: url("../images/header-bg.jpg") no-repeat center; }
+    background: url("../images/header-bg.jpg") no-repeat center;
+    background-size: cover; }
   .cream-background {
     display: none; } }
 
 @media (max-width: 900px) {
-  .header {
-    background-size: cover; }
   .header-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -279,9 +279,8 @@ body {
         justify-content: space-around; }
   .form__input {
     width: 100%; }
-  .form__button {
-    -ms-flex-item-align: center;
-        align-self: center; } }
+  .form__button-lg {
+    width: 100%; } }
 
 @media (max-width: 750px) {
   .header-content {
@@ -459,6 +458,7 @@ ul {
     margin-bottom: 50px;
     font-size: 48px; }
   .order-cream__text {
+    max-width: 400px;
     margin-bottom: 50px;
     font-size: 22px; }
 
@@ -483,7 +483,17 @@ ul {
     background-image: url("../images/cream-container.png"); }
 
 @media (max-width: 1130px) {
-  .order-cream {
+  .order-cream__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center; } }
 
 @media (max-width: 900px) {
@@ -545,7 +555,7 @@ ul {
     line-height: 22px;
     letter-spacing: 0.02em; }
 
-@media (max-width: 1130px) {
+@media (max-width: 1220px) {
   .ingridients {
     padding: 50px 30px 25px;
     text-align: center; }
@@ -558,10 +568,7 @@ ul {
           -ms-flex-align: center;
               align-items: center; }
     .ingridients__img {
-      display: none; }
-  .composition-card {
-    max-width: 240px;
-    padding: 0 10px; } }
+      display: none; } }
 
 .navigation {
   margin-top: 28px;
