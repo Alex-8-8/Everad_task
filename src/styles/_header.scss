@@ -151,7 +151,8 @@
     &-new {
       color: $color-lightblue;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 34px;
+      height: 34px;
     }
   }
 
@@ -183,7 +184,7 @@
       position: absolute;
       top: 50%;
       left: 20px;
-      
+
       transform: translateY(-50%);
       background-repeat: no-repeat;
       z-index: 1;
@@ -215,6 +216,7 @@
 @media (max-width: 1130px) {
   .header {
     background: url("../images/header-bg.jpg") no-repeat center;
+    background-size: cover;
   }
   .cream-background {
     display: none;
@@ -222,9 +224,6 @@
 }
 
 @media (max-width: 900px) {
-  .header {
-    background-size: cover;
-  }
   .header-content {
     flex-direction: column;
     align-items: center;
@@ -246,8 +245,8 @@
     &__input {
       width: 100%;
     }
-    &__button {
-      align-self: center;
+    &__button-lg {
+      width: 100%;
     }
   }
 }

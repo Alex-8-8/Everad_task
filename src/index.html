@@ -9,11 +9,11 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header section-inner">
+    <header class="header section-inner" id="header">
       <div class="section-wrapper header__wrapper">
         <div class="header-nav">
           <div class="header-nav__logo-title">
-            <a href="#" class="main-logo">
+            <a href="#header" class="main-logo">
               <img src="./images/logo.png" alt="logo" class="main-logo__img">
             </a>
             <h2 class="header-nav__title">Pantoflex</h2>
@@ -47,9 +47,18 @@
             </h2>
             <p class="header-about__text">и верните им эластичность при остеоартрите</p>
             <ul class="header-list">
-              <li class="header-list__item"><span class="header-list__list-style"></span>Помогает снять боль</li>
-              <li class="header-list__item"><span class="header-list__list-style"></span>Устраняет скованность суставов</li>
-              <li class="header-list__item"><span class="header-list__list-style"></span>Уменьшает отеки</li>
+              <li class="header-list__item">
+                <span class="header-list__list-style"></span>
+                Помогает снять боль
+              </li>
+              <li class="header-list__item">
+                <span class="header-list__list-style"></span>
+                Устраняет скованность суставов
+              </li>
+              <li class="header-list__item">
+                <span class="header-list__list-style"></span>
+                Уменьшает отеки
+              </li>
             </ul>
           </div>
           <!-- HEADER-FORM -->
@@ -58,12 +67,22 @@
             <div class="header-cost">
               <div class="header-cost__box header-cost__box-old">
                 <p class="header-cost__text">Старая цена</p>
-                <p class="header-cost__amount header-cost__amount-old">1980<span class="header-cost__rub">руб.</span></p>
+                <p class="header-cost__amount header-cost__amount-old">
+                  1980
+                  <span class="header-cost__rub">
+                    руб.
+                  </span>
+                </p>
               </div>
               <span class="header-cost__breakline"></span>
               <div class="header-cost__box header-cost__box-new">
                 <p class="header-cost__text header-cost__text-new">Ваша цена</p>
-                <p class="header-cost__amount header-cost__amount-new">990<span class="header-cost__rub">руб.</span></p>
+                <p class="header-cost__amount header-cost__amount-new">
+                  990
+                  <span class="header-cost__rub">
+                    руб.
+                  </span>
+                </p>
               </div>
             </div>
             <form action="#" class="form" method>
@@ -73,7 +92,12 @@
               <label class="form__label form__label-phone">
                 <input type="text" class="form__input" name="phone" placeholder="Телефон">
               </label>
-              <button type="submit" class="form__button button"><span class="form__button-order">Заказать</span><br> со скидкой</button>
+              <button type="submit" class="form__button form__button-lg button">
+                <span class="form__button-order">
+                  Заказать
+                </span>
+                <br> со скидкой
+              </button>
             </form>
           </div>
         </div>
@@ -90,7 +114,13 @@
     <main>
       <section class="symptoms section-inner" id="symptoms">
         <div class="section-wrapper">
-          <h2 class="symptoms__title">Симптомы остеоартрита <span class="symptoms__title-hightlight">не пройдут</span><br> сами по себе</h2>
+          <h2 class="symptoms__title">
+            Симптомы остеоартрита
+              <span class="symptoms__title-hightlight">
+               не пройдут
+              </span>
+              <br> сами по себе
+          </h2>
           <ul class="symptoms__list">
             <li class="symptoms__item">
               <div class="symptoms__picture">
@@ -143,8 +173,15 @@
           <h2 class="order-cream__title">
             Крем <span class="pantoflex">Pantoflex</span>
           </h2>
-          <p class="order-cream__text">поможет избавиться от боли,<br> снять отеки и вернет суставам подвижность</p>
-          <button type="submit" class="form__button button"><span class="form__button-order">Заказать</span><br> со скидкой</button>
+          <p class="order-cream__text">поможет избавиться от боли, снять отеки и вернет суставам подвижность</p>
+          <a href="#header">
+            <button type="submit" class="form__button button">
+              <span class="form__button-order">
+              Заказать
+              </span>
+              <br> со скидкой
+            </button>
+          </a>
           <div class="cream-background">
             <div class="cream-background__wrapper">
               <div class="cream-background__cream-box"></div>
@@ -158,7 +195,11 @@
         <div class="section-wrapper ingridients__wrapper">
           <div class="ingridients__description">
             <h2 class="ingridients__title">
-              Состав <span class="pantoflex">Pantoflex</span><br> помогает избавиться от всех симптомов<br> остеоартрита
+              Состав
+              <span class="pantoflex">
+                Pantoflex
+              </span>
+              <br> помогает избавиться от всех симптомов<br> остеоартрита
             </h2>
             <img src="./images/ingridients.png" alt="ingridients" class="ingridients__img">
           </div>
